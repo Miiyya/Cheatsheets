@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <h1>CSS selectors and specificity</h1>
+        <h2>Selector Types</h2>
+        <table class="selectors">
+            <thead>
+                <th>Type</th>
+                <th>Example</th>
+                <th>Description</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Universal selectors</td>
+                    <td>*</td>
+                    <td>The CSS universal selector (*) matches elements of any type.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors">MDN Universal selectors</a></td>
+                </tr>
+                <tr>
+                    <td>Element names and pseudo-elements</td>
+                    <td>h1, ::before </td>
+                    <td>The CSS type selector selects all elements of the given type within a document</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors">MDN Type selectors</a></td>
+                </tr>
+                <tr>
+                    <td>Class selector and pseudo-classes</td>
+                    <td>.menu, :hover</td>
+                    <td>The CSS class selector matches elements based on the contents of their class attribute.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">MDN Class selectors</a></td>
+                </tr>
+                <tr>
+                    <td>Attribute selectors</td>
+                    <td>div[lang]</td>
+                    <td>The CSS attribute selector matches elements based on the presence or value of a given attribute.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">MDN Attribute selectors</a></td>
+                </tr>
+                <tr>
+                    <td>ID selectors</td>
+                    <td>#navbar</td>
+                    <td>The CSS ID selector matches an element based on the value of the element’s id attribute. In order for the element to be selected, its id attribute must match exactly the value given in the selector.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors">MDN ID selectors</a></td>
+                </tr>
+                <tr>
+                    <td>!important</td>
+                    <td>!important</td>
+                    <td>The CSS universal selector (*) matches elements of any type.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#the_!important_exception">MDN !important</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>CSS Specificity</h2>
+        <table class="specifity">
+            <thead>
+                <th>Type</th>
+                <th>Specifity value</th>
+                <th>Notes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Universal selectors</td>
+                    <td>0</td>
+                    <td>Universal selector (*), combinators (+, >, ~, ' ', ||) and negation pseudo-class (:not()) have no effect on specificity. (The selectors declared inside :not() do, however.)</td>
+                </tr>
+                <tr>
+                    <td>Element names and pseudo-elements</td>
+                    <td>1</td>
+                    <td>Prime selectors with the lowest specifity. </td>
+                </tr>
+                <tr>
+                    <td>Class selector, pseudo-classes and attribute selectors</td>
+                    <td>10</td>
+                    <td>A class selector beats any number of element selectors </td>
+                    </tr>
+                <tr>
+                    <td>ID selectors</td>
+                    <td>100</td>
+                    <td>ID selectors have a higher specificity than attribute selectors</td>
+                </tr>
+                <tr>
+                    <td>Inline styles</td>
+                    <td>1000</td>
+                    <td>Your global CSS file that sets visual aspects of your site globally may be overwritten by inline styles defined directly on individual elements.</td>
+                </tr>
+                <tr>
+                    <td>!important</td>
+                    <td>10000</td>
+                    <td>When an important rule is used on a style declaration, this declaration overrides any other declarations. Although technically !important has nothing to do with specificity.</td>
+                </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+h1,
+h2 {
+text-align: center;
+color: teal;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 4px;
+}
+
+h2 {
+    color: grey;
+}
+
+.selectors {
+    text-align: center;
+    line-height: 1.5;    
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.selectors thead {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(23, 207, 69);
+    color: white;
+}
+
+.selectors th,
+.selectors td {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.selectors tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Specifity*/
+
+.specifity {
+    text-align: center;
+    line-height: 1.5;    
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.specifity thead {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(23, 207, 69);
+    color: white;
+}
+
+.specifity th,
+.specifity td {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.specifity tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+ 
